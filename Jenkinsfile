@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Compiling the java source code'
-                sh 'javac demo.java'
+                sh 'javac Demo.java'
             }
         }
         stage('run') {
             steps {
                 echo 'Running the compiled java code.'
-                sh 'java demo'
+                sh 'java Demo'
             }
         }
     }
